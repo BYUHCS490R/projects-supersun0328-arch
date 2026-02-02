@@ -2,8 +2,11 @@ p   {
     color: rgb(90, 153, 100);
     font-size: larger;
 }
-header {
+header p {
     color: white;
     background-color: rgb(90, 167, 109);
+    text-align: center;
+}
+header h1 {
     text-align: center;
 }
