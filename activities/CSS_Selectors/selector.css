@@ -1,0 +1,19 @@
+blockquote  {
+    color: yellowgreen;
+    font-size: larger;
+}
+p   {
+    color: rgb(29, 65, 65);
+}
+#first  {
+    color: blue;
+}
+h2  {
+    color: brown;
+}
+.class {
+    color: blueviolet;
+}
+blockquote p    {
+    color: cadetblue;
+}
