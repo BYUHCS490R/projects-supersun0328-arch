@@ -1,0 +1,48 @@
+body    {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(226, 201, 239);
+    font: bold 16px/1.5;
+    background-color: rgb(129, 98, 145);
+}   
+h2 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+footer {
+    font-size: 14px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(91, 61, 107);
+    padding: 10px;
+}
+a:link {
+    color: rgb(226, 183, 206);
+    text-decoration: none;
+}
+#aboutlinkt {
+    color: rgb(129, 71, 103);
+    text-decoration: none;
+    background-color: rgb(226, 183, 206);
+    text-align: center;
+}
+.class1 {
+    color: rgb(129, 71, 103);
+    display: inline-block;
+    background-color: rgb(226, 183, 206);
+    text-align: center;
+}
+dd {
+    color: rgb(226, 183, 206);
+    line-height: 2.0;
+}
