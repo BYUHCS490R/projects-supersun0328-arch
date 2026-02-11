@@ -1,0 +1,13 @@
+body    {
+    background-image: url('abstract-fabric-moles-texture.jpg');
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: gray;
+    background-repeat: repeat;
+}
+.decorative {
+    min-height: 300px;
+    background-image: url('99df05b4-d55b-4277-9c89-9da815ff34ca.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
