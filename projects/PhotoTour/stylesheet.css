@@ -1,0 +1,27 @@
+body    {
+    background-image: url(abstract-fabric-moles-texture.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    color: bisque;
+}
+ul {
+    list-style-image: url(Untitled.png);
+}
+a   {
+    color: white;
+}
+main    {
+    color: beige;
+}
+h1  {
+    color: antiquewhite;
+}
+
+.deco {
+    background-image: url(side\ pic.png);
+    min-height: 80px;
+}
+nav a.active {
+  background-color: rgb(114, 113, 96);
+  color: white;
+  border-radius: 6px;
+}
