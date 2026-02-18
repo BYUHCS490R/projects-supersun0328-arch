@@ -1,0 +1,31 @@
+header {
+    background-color: rgb(113, 141, 150);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h2 {
+    background-color: rgb(107, 163, 154);
+    color: white;
+    text-align: center;
+}
+.mainpics {
+    background-color: rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
+}
+figcaption {
+    color: white;
+    background-color: rgb(68, 65, 65);
+    text-align: left;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: left;
+    margin: 20px;
+}
+footer {
+    border: 5px dashed rgb(248, 219, 219);
+    background-color: rgb(113, 141, 150);
+}
