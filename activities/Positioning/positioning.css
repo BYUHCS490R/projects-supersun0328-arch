@@ -1,0 +1,23 @@
+body    {
+    background-color: bisque;
+}
+.pic {
+    float: left; margin-right: 50px; width: 120px; 
+}
+.card { 
+    position: absolute;
+}
+.tag  { 
+    position: relative; top: 22px; left: 12px;
+}
+.navbar {
+  position: fixed;
+  top: 100px;
+  left: 600px;
+  width: 100%;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #b39a9a;
+}
