@@ -1,0 +1,16 @@
+.figure {
+    float: left;
+    width: 300px;
+    margin: 10px;
+    display:block
+}
+body    {
+    background-color: rgb(160, 184, 210);
+}
+main    {
+    background-color: aliceblue;
+}
+footer  {
+    background-color: rgb(65, 90, 112);
+    color:aliceblue
+}
