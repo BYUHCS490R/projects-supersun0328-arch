@@ -2,15 +2,75 @@
     float: left;
     width: 300px;
     margin: 10px;
-    display:block
+    display:block;
+}
+header  {
+    color:rgb(65, 90, 112);
+    border-bottom: 2px rgb(65, 90, 112);
+    text-shadow: 2px 2px 2px rgb(146, 182, 213);
+}
+header h1 {
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
 body    {
     background-color: rgb(160, 184, 210);
 }
 main    {
     background-color: aliceblue;
+    color: rgb(65, 90, 112);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+main p    {
+    text-align: center;
+
 }
 footer  {
     background-color: rgb(65, 90, 112);
     color:aliceblue
+}
+.wrapper    {
+    background-color: aliceblue;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 0px;
+    box-shadow: 5px 5px 5px rgb(65, 90, 112);
+    border-radius: 5px;
+     background-image: url(drawingbyme.png);
+    background-repeat: no-repeat;
+    background-position: right 20px bottom 40px;
+}
+nav a {
+    padding: 7px;
+    display: inline-block;
+    border: solid rgb(160, 184, 210);
+    margin: 5px;
+    color:  aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(160, 184, 210);
+    border-radius: 6px;
+}
+nav a:hover {
+    background-color: rgb(65, 90, 112);
+}
+nav {
+    background-color: rgb(65, 90, 112);
+    border-radius: 5px;
+}
+footer  {
+    clear:both;
+    border-radius: 5px;
+    
+}
+figcaption   {
+    color: rgb(65, 90, 112);
+    border: thin solid
+}
+.bold   {
+    font-style: italic;
+    font-weight: bold;
 }
