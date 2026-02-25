@@ -1,0 +1,35 @@
+.card   {
+    background-color: rgb(127, 160, 149);
+    color: rgb(255, 252, 249);
+    margin: 3px;
+}
+body    {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "side main main"
+                         "footer footer footer";
+}
+header  {
+    grid-area: header;
+}
+nav {
+    grid-area: side;
+}
+main    {
+    grid-area: main;
+}
+footer  {
+    grid-area: footer;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    gap: 20px;
+}
+.flexsample {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
