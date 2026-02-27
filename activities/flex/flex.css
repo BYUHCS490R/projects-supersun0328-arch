@@ -1,0 +1,36 @@
+.card   {
+    background-color: antiquewhite;
+    margin: 3px;
+    border: thin solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+body    {
+    background-color: rgb(187, 165, 133);
+}
+#parent {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 2px;
+    flex-flow: row wrap;
+}
+.highlight  {
+    order: 1;
+}
+nav a {
+    display: block;
+    padding: 5px;
+    background-color:antiquewhite;
+    color: blueviolet;
+    text-decoration: none;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+
+}
