@@ -1,5 +1,15 @@
 body    {
-    background-color: rgb(248, 236, 188)
+    background-color: rgb(248, 236, 188);
+    font-family: 'Courier New', Courier, monospace;
+}
+header  {
+    background-color: rgb(94, 71, 71);
+    border-radius: 5px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 1px;
+    color: aliceblue;
+
 }
 
 nav  {
@@ -25,16 +35,32 @@ nav a:hover    {
 }
 aside   {
     width: 20%;
+    min-width: 150px;
+    background-color: rgb(220, 179, 145);
+    height: 500px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(125, 94, 94);
+    margin: 20px;
+}
+.figs   {
+    font-size: 10px;
+    background-color: rgb(164, 150, 132);
+    width: 150px;
+    color: aliceblue;
 }
 main    {
     flex: 1;
+}
+.sidepic    {
+    width: 100%;
 }
 .familypics {
     width: 100%;
 }
 .cards  {
     border: none;
-    padding: 5px;
+    padding: 20px;
     border-radius: 5px;
     background-color: rgb(251, 235, 214);
     box-shadow: 5px 5px 5px grey;
@@ -43,10 +69,33 @@ main    {
 .main   {
     display: flex;
     gap: 2px;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     flex-flow: row wrap;
 }
 figure  {
     margin: 20px;
+}
+.mcontent   {
+    display: flex;
+    flex-flow: wrap;
+}
+
+@media print    {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px)    {
+    nav {
+        flex-direction: column;
+    }
+    .sidebar {
+        flex-direction: column-reverse;
+    }
+    aside {
+        width:76%
+    }
+    .cards {
+        width: 70%;
+    }
 }
