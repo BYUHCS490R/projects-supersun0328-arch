@@ -1,20 +1,28 @@
 body    {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .table  {
     margin: 5px auto;
-    border: thin solid black;
-    border-spacing: 0px;
+    border: thin solid rgb(0, 0, 0);
+    border-spacing: 3px;
     border-collapse: collapse;
-    background-color: rgb(196, 171, 141);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+thead {
+    background-color: rgb(75, 71, 35);
+    color: aliceblue;
 }
 .table td, .table th {
-    border: thin solid black;
     padding: 5px;
-}
-.table th {
-    background-color: bisque;
+    margin: auto;
 }
 .table tbody tr:nth-child(odd) {
-    background-color: aliceblue;
+    background-color: rgb(221, 153, 153);
+}
+tfoot {
+    background-color: rgb(197, 149, 134);
+}
+.outl {
+    background-color: rgb(255, 255, 255);
 }
