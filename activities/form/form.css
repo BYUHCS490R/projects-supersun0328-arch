@@ -1,0 +1,41 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+} 
+.form-row label {
+    width: 100px;
+    text-align: right;
+}
+.spacer {
+    width: 100px;
+    text-align: right;
+}
+fieldset {
+    box-shadow: 5px 5px 5px grey;
+}
+input {
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: beige
+    ;
+}
+input[type="submit"] {
+    background-color: rgb(112, 105, 96);
+    color: aliceblue;
+}
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row {
+        text-align: left;
+    }
+    .spacer {
+        text-align: left;
+    }
+}

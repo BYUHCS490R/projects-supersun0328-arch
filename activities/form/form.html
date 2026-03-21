@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header></header>
     <nav></nav>
     <main>
+        <fieldset>
+        <legend>assignment</legend>
         <form action="formprocs.html" method="get">
-            <div>
-                <label for="fname">Name</label>
+            <div class="form-row">
+                <label for="fname">Name:</label>
                 <input type="text" name="fullname" id="fname" required>
             </div>
-            <div>
-                <label for="email">Email</label>
+            <div class="form-row">
+                <label for="email">Email:</label>
                 <input type="email" name="email" id="email">
             </div>
-            <div>
-                <label for="password">password</label>
+            <div class="form-row">
+                <label for="password">password:</label>
                 <input type="password" name="pass" id="password">
-            </div>
-            <div>
-                <label for="stats">States</label>
+            </div class="form-row">
+            <div class="form-row">
+                <label for="stats">States:</label>
                 <select name="state" id="state">
                     <option values="blank">------</option>
                     <option values="CA">California</option>
@@ -31,19 +34,23 @@
                     <option values="UI">Utah</option>
                 </select>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer">gender:</div>
                 <label><input type="radio" name="gender" value="male">male</label>
                 <label><input type="radio" name="gender" value="male">female</label>
                 <label><input type="radio" name="gender" value="male">male</label>
                 <label><input type="radio" name="gender" value="male">male</label>
                 <label><input type="radio" name="gender" value="male">male</label>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div>
                 <label><input type="checkbox" name="gender" value="male">male</label>
             </div>
-            <div>
-                <input type="submit" value="sleep">
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="sleep">  
             </div>
+            </fieldset>
         </form>
         <h2>The form tag has an "action" attribute. What does it do?</h2>
         <p>Specifies where the form data is sent</p>
@@ -52,6 +59,13 @@
         <h2>What is the difference between a "POST" and a "GET"?</h2>
         <p>GET:Data is shown in the URL</p>
         <P>POST:Data is sent in the request body</P>
+        <fieldset>
+            <legend>for assignment  Engagement - Form Styling</legend>
+        <h2>What are different ways to style your form?</h2>
+        <p>Use CSS (colors, fonts, spacing, layout).</p>
+        <h2>How does flex help for both Desktop and Mobile phones?</h2>
+        <p>Makes layout flexible—row on desktop, stack on mobile.</p>
+        </fieldset>
     </main>
     <footer>
         <p>&copy;David Sun 2026</p>
