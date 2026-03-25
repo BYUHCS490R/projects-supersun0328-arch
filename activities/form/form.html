@@ -34,6 +34,10 @@
                     <option values="UI">Utah</option>
                 </select>
             </div>
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+            </div>
             <div class="check-row">
                 <div class="spacer">gender:</div>
                 <label><input type="radio" name="gender" value="male">male</label>
@@ -70,5 +74,40 @@
     <footer>
         <p>&copy;David Sun 2026</p>
     </footer>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            //alert("form submitted");
+
+            const fullname = document.getElementById("fname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const state = document.getElementById("state").value;
+            const age = document.getElementById("age").value
+
+            if (!fullname || !email )
+                alert("you need a name and email");
+                return; 
+            }
+
+            if (!age || age < 18) {
+                alert("you need to be 18 or older");
+                return;
+            }
+            
+            const formdata = {
+                name: fullname,
+                email: email,
+                password: password,
+                state: state,
+                gender: gender
+                age: age
+            }
+
+            console.log(formdata);
+            
+        });
+    </script>
 </body>
 </html>
