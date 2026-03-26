@@ -10,67 +10,70 @@
     <header></header>
     <nav></nav>
     <main>
-        <fieldset>
-        <legend>assignment</legend>
         <form action="formprocs.html" method="get">
-            <div class="form-row">
-                <label for="fname">Name:</label>
-                <input type="text" name="fullname" id="fname" required>
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="form-row">
-                <label for="password">password:</label>
-                <input type="password" name="pass" id="password">
-            </div class="form-row">
-            <div class="form-row">
-                <label for="stats">States:</label>
-                <select name="state" id="state">
-                    <option values="blank">------</option>
-                    <option values="CA">California</option>
-                    <option values="HI">Hawaii</option>
-                    <option values="UI">Utah</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label for="age">Age:</label>
-                <input type="number" name="age" id="age">
-            </div>
-            <div class="check-row">
-                <div class="spacer">gender:</div>
-                <label><input type="radio" name="gender" value="male">male</label>
-                <label><input type="radio" name="gender" value="male">female</label>
-                <label><input type="radio" name="gender" value="male">male</label>
-                <label><input type="radio" name="gender" value="male">male</label>
-                <label><input type="radio" name="gender" value="male">male</label>
-            </div>
-            <div class="check-row">
-                <div class="spacer"></div>
-                <label><input type="checkbox" name="gender" value="male">male</label>
-            </div>
-            <div class="form-row">
-                <div class="spacer"></div>
-                <input type="submit" value="sleep">  
-            </div>
+            <fieldset>
+                <legend>assignment</legend>
+
+                <div class="form-row">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fullname" id="fname" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">password:</label>
+                    <input type="password" name="pass" id="password">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">States:</label>
+                    <select name="state" id="state">
+                        <option value="">------</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer">gender:</div>
+                    <label><input type="radio" name="gender" value="male">male</label>
+                    <label><input type="radio" name="gender" value="female">female</label>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree" value="yes">male</label>
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="sleep">  
+                </div>
             </fieldset>
         </form>
-        <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p>Specifies where the form data is sent</p>
-        <h2>The form tag has a "method" attribute. What does it do?</h2>
-        <p>Defines how the data is sent</p>
-        <h2>What is the difference between a "POST" and a "GET"?</h2>
-        <p>GET:Data is shown in the URL</p>
-        <P>POST:Data is sent in the request body</P>
-        <fieldset>
-            <legend>for assignment  Engagement - Form Styling</legend>
-        <h2>What are different ways to style your form?</h2>
-        <p>Use CSS (colors, fonts, spacing, layout).</p>
-        <h2>How does flex help for both Desktop and Mobile phones?</h2>
-        <p>Makes layout flexible—row on desktop, stack on mobile.</p>
-        </fieldset>
+
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>a programming language used to make web pages interactive.</p>
+
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>In the browser (client-side) and on a server (server-side, like Node.js)</p>
+
+        <h2>What was the most popular front-end js library?</h2>
+        <p>jQuery</p>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p>React</p>
     </main>
+
     <footer>
         <p>&copy;David Sun 2026</p>
     </footer>
@@ -78,35 +81,34 @@
     <script>
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault();
-            //alert("form submitted");
 
             const fullname = document.getElementById("fname").value;
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             const state = document.getElementById("state").value;
-            const age = document.getElementById("age").value
+            const age = document.getElementById("age").value;
+            const gender = document.querySelector('input[name="gender"]:checked')?.value;
 
-            if (!fullname || !email )
+            if (!fullname || !email) {
                 alert("you need a name and email");
-                return; 
+                return;
             }
 
             if (!age || age < 18) {
                 alert("you need to be 18 or older");
                 return;
             }
-            
+
             const formdata = {
                 name: fullname,
                 email: email,
                 password: password,
                 state: state,
-                gender: gender
+                gender: gender,
                 age: age
-            }
+            };
 
             console.log(formdata);
-            
         });
     </script>
 </body>
