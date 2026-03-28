@@ -10,7 +10,8 @@
     <header></header>
     <nav></nav>
     <main>
-        <form action="formprocs.html" method="get">
+        <div id="message"></div>
+        <form action="form.html" method="get">
             <fieldset>
                 <legend>assignment</legend>
 
@@ -62,54 +63,17 @@
             </fieldset>
         </form>
 
-        <h2>What is JavaScript? How did it get its name?</h2>
-        <p>a programming language used to make web pages interactive.</p>
+        <h2>What is AJAX?</h2>
+        <p>AJAX is a way to send and receive data from a server without reloading the whole web page.</p>
 
         <h2>What are the two ways you can run JavaScript?</h2>
-        <p>In the browser (client-side) and on a server (server-side, like Node.js)</p>
-
-        <h2>What was the most popular front-end js library?</h2>
-        <p>jQuery</p>
-        <h2>What is the most popular front-end js library today?</h2>
-        <p>React</p>
+        <p>It keeps the code organized, easier to maintain, and allows the browser to load it faster using caching.</p>
     </main>
 
     <footer>
         <p>&copy;David Sun 2026</p>
     </footer>
 
-    <script>
-        document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const fullname = document.getElementById("fname").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-            const state = document.getElementById("state").value;
-            const age = document.getElementById("age").value;
-            const gender = document.querySelector('input[name="gender"]:checked')?.value;
-
-            if (!fullname || !email) {
-                alert("you need a name and email");
-                return;
-            }
-
-            if (!age || age < 18) {
-                alert("you need to be 18 or older");
-                return;
-            }
-
-            const formdata = {
-                name: fullname,
-                email: email,
-                password: password,
-                state: state,
-                gender: gender,
-                age: age
-            };
-
-            console.log(formdata);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
