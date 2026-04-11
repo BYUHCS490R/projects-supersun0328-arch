@@ -1,0 +1,27 @@
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery.digital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.gallery.digital img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 8px 8px rgb(137, 183, 134);
+}
+
+@media (max-width: 768px) {
+    .gallery.physical {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery.digital img {
+        width: 100%;
+    }
+}

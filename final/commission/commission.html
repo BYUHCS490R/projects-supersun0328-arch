@@ -4,92 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commissions | David Sun Portfolio</title>
-
     <meta name="description" content="Commission request form for David Sun's art services.">
     <meta name="keywords" content="commissions, art form, digital art, illustration">
     <meta name="author" content="David Sun">
-    <link rel="stylesheet" href="finalmainp.css">
+    <link rel="stylesheet" href="../finalmainp/finalmainp.css">
+    <link rel="stylesheet" href="commission.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-links"> 
-            <a href="../finalmainp/finalmainp.html" class="links">Home</a>
-            <a href="../about/about.html" class="links">About</a>
-            <a href="../profolio/profolio.html" class="links">digital painting</a>
-            <a href="../commission/commission.html" class="links">Commissions</a>
-            <a href="../comparision/comparision.html" class="links">Software</a>
-            <a href="../phpa/phpa.html" class="links">physical painting</a>
-        </div>   
-    </nav>
+    <div id="overall">
+        <nav>
+            <div class="nav-links"> 
+                <a href="../finalmainp/finalmainp.html" class="links">Home</a>
+                <a href="../about/about.html" class="links">Video</a>
+                <a href="../profolio/profolio.html" class="links">Digital Painting</a>
+                <a href="../commission/commission.html" class="links active">Commissions</a>
+                <a href="../comparision/comparision.html" class="links">Software</a>
+                <a href="../phpa/phpa.html" class="links">Physical Painting</a>
+            </div>   
+        </nav>
 
-    <header class="pics"></header>
+        <header class="pics">
+            <div class="banner">
+                <img src="prosu autumn 2024.jpg" alt="Commission artwork examples">
+            </div>
+        </header>
 
-    <section class="title-section">
-        <h1>Commissions</h1>
-        <p>Request a Commission</p>
-    </section>
+        <main>
+            <div id="centerthis">
+                <section class="title">
+                    <h1>Commissions</h1>
+                    <p>Request a custom art piece</p>
+                </section>
 
-    <main>
-        <section class="intro">
-            <h2>Commission Request Form</h2>
-            <p>
-                Please fill out the form below if you are interested in requesting a commission.
-                I will use this information to understand your project better.
-            </p>
+                <section class="about">
+                    <div class="about-text full-box">
+                        <h2>Commission Request Form</h2>
+                        <p>
+                            Please fill out the form below if you are interested in a commission.
+                            This helps me understand your project, budget, and deadline.
+                        </p>
+                    </div>
+                </section>
 
-            <div id="message"></div>
+                <section class="form-section">
+                    <div id="message"></div>
 
-            <form id="commissionForm">
-                <fieldset>
-                    <legend>Commission Details</legend>
+                    <form id="commissionForm" action="commission.html" method="get">
+                        <fieldset>
+                            <legend>Commission Details</legend>
 
-                    <p>
-                        <label for="clientName">Name:</label><br>
-                        <input type="text" id="clientName" name="clientName">
-                    </p>
+                            <p>
+                                <label for="clientName">Name:</label><br>
+                                <input type="text" id="clientName" name="clientName">
+                            </p>
 
-                    <p>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email">
-                    </p>
+                            <p>
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email">
+                            </p>
 
-                    <p>
-                        <label for="commissionType">Commission Type:</label><br>
-                        <select id="commissionType" name="commissionType">
-                            <option value="">Select one</option>
-                            <option value="Bust">Bust</option>
-                            <option value="Half Body">Half Body</option>
-                            <option value="Full Body">Full Body</option>
-                            <option value="Character Design">Character Design</option>
-                        </select>
-                    </p>
+                            <p>
+                                <label for="commissionType">Commission Type:</label><br>
+                                <select id="commissionType" name="commissionType">
+                                    <option value="">Select one</option>
+                                    <option value="Half Body">Half Body</option>
+                                    <option value="Full Body">Full Body</option>
+                                    <option value="Character Design">Character Design</option>
+                                </select>
+                            </p>
 
-                    <p>
-                        <label for="budget">Budget (USD):</label><br>
-                        <input type="number" id="budget" name="budget" min="1">
-                    </p>
+                            <p>
+                                <label for="budget">Budget (USD):</label><br>
+                                <input type="number" id="budget" name="budget" min="1">
+                            </p>
 
-                    <p>
-                        <label for="deadline">Deadline:</label><br>
-                        <input type="date" id="deadline" name="deadline">
-                    </p>
+                            <p>
+                                <label for="deadline">Deadline:</label><br>
+                                <input type="date" id="deadline" name="deadline">
+                            </p>
 
-                    <p>
-                        <label for="details">Project Details:</label><br>
-                        <textarea id="details" name="details" rows="6" cols="40"></textarea>
-                    </p>
+                            <p>
+                                <label for="details">Project Details:</label><br>
+                                <textarea id="details" name="details" rows="6" cols="40"></textarea>
+                            </p>
 
-                    <p>
-                        <input type="submit" value="Submit Request">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+                            <p>
+                                <input type="submit" value="Submit Request">
+                            </p>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </main>
 
-    <footer>
-        <p>© 2026 David Sun</p>
-    </footer>
+        <footer>
+            <p>© 2026 David Sun</p>
+        </footer>
+    </div>
 
     <script src="commission.js"></script>
 </body>
